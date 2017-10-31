@@ -10,7 +10,7 @@ namespace BusinessDayCalculation.Tests
         [MemberData(nameof(DateFormats))]
         public void Test_Different_Date_Formats_Are_Parsed(string dateFormat)
         {
-            //arrange
+            //arrange 
             var sut = new BusinessDayCalculation();
             //act
             var date = sut.ParseDate(dateFormat);
